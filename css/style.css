@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #202020;
+}
+
+input {
+  outline: none;
+}
+
+body {
+  background: #E5E5E5;
+}
+
+.todo {
+  margin: 50px auto;
+  padding: 25px 8px;
+  background-color: #fff;
+  max-width: 476px;
+}
+
+.header {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.header-low {
+  margin-top: 12px;
+}
+
+.todo_form {
+  width: 100%;
+}
+
+.todo_input {
+  width: 100%;
+  border: none;
+  border-radius: none;
+}
+
+.todo_input:focus {
+  background-color: rgba(152, 148, 148, 0.201);
+}
+
+.form-element {
+  position: relative;
+  margin-bottom: 8px;
+  border: 1px solid #989898;
+  border-radius: 6px;
+  padding: 12px 45px;
+}
+
+.icon {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.icon:hover {
+  background-color: rgba(169, 169, 169, 0.194);
+}
+
+.icon:active {
+  background-color: rgba(169, 169, 169, 0.6);
+}
+
+.form-element_label {
+  display: block;
+  width: 100%;
+  font-weight: normal;
+}
+
+.form-element--cheked {
+  background-color: #f4f4f4;
+  transition: 0.2s;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox-text::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  border: 1px solid #998899;
+  box-sizing: border-box;
+  display: block;
+}
+
+.checkbox-text::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 15px;
+  height: 15px;
+  transform: translate(3px, 3px);
+  background: #C4C4C4;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: block;
+  opacity: 0;
+  transition: .2s;
+}
+
+.checkbox:checked + .checkbox-text::after {
+  opacity: 1;
+}
