@@ -10,49 +10,22 @@
 <body>
   <div class="todo">
     <h2 class="header">HIGH</h2>
-      <form class="todo_form">
+      <form onsubmit="return false" class="todo_form">
         <div class="form-element">
           <input class="todo_input" type="text" name="high" id="high" tabindex="1" placeholder="Добавить важных дел">
-          <img src="img/add-icon.png" alt="add icon" class="icon icon-add">
+          <button class="btn btn-add"><img src="img/add-icon.png" alt="add icon" class="icon icon-add"></button>
         </div>
-        <div class="form-element">
-          <label class="form-element_label">
-            <input type="checkbox" class="checkbox">
-            <span class="checkbox-text">Вот вам и супер интересная тема. 
-              Вы наверняка заметили что ваши файлы с кодом становятся все объемнее, что хочется вынести некоторые вещи куда-то за пределы основной программы.</span>
-          </label>
-          <img src="img/remove-icon.png" alt="remove icon" class="icon icon-remove">
-        </div>
-        <div class="form-element">
-          <label class="form-element_label">
-            <input type="checkbox" class="checkbox">
-            <span class="checkbox-text">Сверстать этот TODO list</span>
-          </label>
-          <img src="img/remove-icon.png" alt="remove icon" class="icon icon-remove">
-        </div>
-        <div class="form-element form-element--cheked">
-          <label class="form-element_label">
-            <input type="checkbox" class="checkbox" checked>
-            <span class="checkbox-text">Начать делать задачу</span>
-          </label>
-          <img src="img/remove-icon.png" alt="remove icon" class="icon icon-remove">
-        </div>
+        <div class="task-container"></div>
       </form>
     <h2 class="header header-low">LOW</h2>
-      <form class="todo_form">
+      <form onsubmit="return false" class="todo_form">
         <div class="form-element">
-          <input class="todo_input" type="text" name="low" id="low" tabindex="2" placeholder="Добавить">
-          <img src="img/add-icon.png" alt="add icon" class="icon icon-add">
+          <input class="todo_input" type="text" name="low" id="low" tabindex="2" placeholder="Добавить неважных дел">
+          <button class="btn btn-add"><img src="img/add-icon.png" alt="add icon" class="icon icon-add"></button>
         </div>
-        <div class="form-element">
-          <label class="form-element_label">
-            <input type="checkbox" class="checkbox">
-            <span class="checkbox-text">Посмотреть ютубчик</span>
-          </label>
-          <img src="img/remove-icon.png" alt="remove icon" class="icon icon-remove">
-        </div>
+        <div class="task-container"></div>
       </form>
   </div>
-  <script type="module" src="js/view.js"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>
