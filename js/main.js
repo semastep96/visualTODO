@@ -4,7 +4,7 @@ function addInputListeners () {
     function addListeners(input) {
         function addTask() {
             const taskContainer = input.parentElement.parentElement.querySelector('.task-container')
-            const text = input.value
+            const text = input.value.trim()
 
             if (!text) return
 
